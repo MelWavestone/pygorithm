@@ -29,7 +29,7 @@ def sort(myList, bucketSize = 5):
     # Initialize buckets
     bucketCount = math.floor((maxValue - minValue) / bucketSize) + 1
     buckets = []
-    for i in range(0, bucketCount):
+    for i in range(0, int(bucketCount)):
         buckets.append([])
 
     # For putting values in buckets
