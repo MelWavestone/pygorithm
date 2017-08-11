@@ -34,7 +34,7 @@ def sort(myList, bucketSize = 5):
 
     # For putting values in buckets
     for i in range(0, len(myList)):
-        buckets[math.floor((myList[i] - minValue) / bucketSize)].append(myList[i])
+        buckets[int(math.floor((myList[i] - minValue) / bucketSize))].append(myList[i])
 
     # Sort buckets and place back into input array
     sortedArray = []
