@@ -32,6 +32,7 @@ class TestStack(unittest.TestCase):
 
         #result = stack.InfixToPostfix(myExp, myStack)
         #resultString = result.infix_to_postfix()
+        #expectedResult = 'a b c d ^ e - f g h * + ^ * + i -'
         #expectedResult = 'a b c d ^ e - f g h * + ^ * + i -'
         #self.assertTrue(resultString, expectedResult)
 
