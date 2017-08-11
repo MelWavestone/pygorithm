@@ -24,16 +24,16 @@ class TestStack(unittest.TestCase):
         self.assertEqual(nullStack.peek(), -1)
         self.assertTrue(nullStack.isEmpty())
 
-class TestInfixToPostfix(unittest.TestCase):
-    def test_infix_to_postfix(self):
-        myExp = 'a+b*(c^d-e)^(f+g*h)-i'
-        myExp = [i for i in myExp]
-        myStack = stack.Stack(len(myExp))     # create a stack
+#class TestInfixToPostfix(unittest.TestCase):
+    #def test_infix_to_postfix(self):
+        #myExp = 'a+b*(c^d-e)^(f+g*h)-i'
+        #myExp = [i for i in myExp]
+        #myStack = stack.Stack(len(myExp))     # create a stack
 
-        result = stack.InfixToPostfix(myExp, myStack)
-        resultString = result.infix_to_postfix()
-        expectedResult = 'a b c d ^ e - f g h * + ^ * + i -'
-        self.assertTrue(resultString, expectedResult)
+        #result = stack.InfixToPostfix(myExp, myStack)
+        #resultString = result.infix_to_postfix()
+        #expectedResult = 'a b c d ^ e - f g h * + ^ * + i -'
+        #self.assertTrue(resultString, expectedResult)
 
 class TestQueue(unittest.TestCase):
     def test_queue(self):
