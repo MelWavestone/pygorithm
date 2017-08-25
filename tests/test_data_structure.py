@@ -57,10 +57,10 @@ class TestLinkedList(unittest.TestCase):
         List.insert_at_start(5)
         List.insert_at_start(2)
         List.insert_at_start(1)
-        List.insert_at_start(4)
+        List.insert_at_start(9)
         List.insert_at_end(6)
 
-        expectedResult = [4, 1, 2, 5, 3, 6]
+        expectedResult = [9, 1, 2, 5, 3, 6]
         self.assertEqual(List.get_data(), expectedResult)
 
     def test_doubly_linked_list(self):
